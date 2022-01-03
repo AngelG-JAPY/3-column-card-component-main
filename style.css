@@ -13,7 +13,10 @@
 }
 
 body{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: var(--background-headings-buttons);
     font-family: 'Lexend Deca';
 }
@@ -21,7 +24,6 @@ body{
 .cards{
     width: 90%;
     height: 500px;
-    margin: 100px auto;
     text-align: center;
     font-size: 0;
 }
@@ -87,4 +89,23 @@ body{
     background-color: transparent;
     border: 2px solid var(--background-headings-buttons);
     color: var(--background-headings-buttons);
+}
+
+@media screen and (max-width:1024px) {
+    .card--cyan{
+        border-radius: 0 0.5em .5em 0;
+    }
+    .card--dark-cyan{
+        border-radius: 0     0 .5em .5em;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .card--orange{
+        border-radius: .5em .5em 0 0;
+    }
+    .card--cyan{
+        border-radius:  0;
+    }
+
 }
